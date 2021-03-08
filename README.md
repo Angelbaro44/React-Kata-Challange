@@ -50,38 +50,38 @@ Task
 -
 Navigate to app-ts-1
 
-Run yarn, then yarn start to see the webpage in the browser
+    Run yarn, then yarn start to see the webpage in the browser
 
-Inspect the console to find and fix any errors or warnings
+    Inspect the console to find and fix any errors or warnings
 
-Show a list of Redgate products in App.tsx.
+    Show a list of Redgate products in App.tsx.
 
-To get the list of products, import the GetData() method from data.ts importing in JavaScript
-Store the value returned from GetData() in a const
-Display a list of the products in <App /> (Rendering Multiple Components)
-Next, in App.tsx create a <ProductList /> component to extract the responsibility into a separate component.
+    To get the list of products, import the GetData() method from data.ts importing in JavaScript
+    Store the value returned from GetData() in a const
+    Display a list of the products in <App /> (Rendering Multiple Components)
+    Next, in App.tsx create a <ProductList /> component to extract the responsibility into a separate component.
 
-The array of products needs to be passed as props
-Because we're in Typescript, you'll need to define a type for the props and state to be passed in to <ProductList /> component
+    The array of products needs to be passed as props
+    Because we're in Typescript, you'll need to define a type for the props and state to be passed in to <ProductList /> component
 
-Import the type Product from Models/Product.ts
-Create an interface for the props for ProductList:
-interface ProductListProps {
-    products: Product[];
-}
-<ProductList /> can be defined like so: class ProductList extends React.Component<ProductListProps, {}>
-The second item '{}' is the state -- we aren't using state yet, so this is the empty object
-More information
-Access the props object to display the relevant information
-Move <ProductList /> into a new file ProductList.tsx and call it from <App />
+    Import the type Product from Models/Product.ts
+    Create an interface for the props for ProductList:
+    interface ProductListProps {
+        products: Product[];
+    }
+    <ProductList /> can be defined like so: class ProductList extends React.Component<ProductListProps, {}>
+    The second item '{}' is the state -- we aren't using state yet, so this is the empty object
+    More information
+    Access the props object to display the relevant information
+    Move <ProductList /> into a new file ProductList.tsx and call it from <App />
 
-Create a <ProductItem /> component inside ProductList.tsx and use it in <ProductList />
+    Create a <ProductItem /> component inside ProductList.tsx and use it in <ProductList />
 
-This should be used to display information about each individual item
-Create and use a new interface for the props of <ProductItem />:
-interface ProductItemProps {
-    product: Product;
-}
-Some of the products are free others are new. Be sure to show this information in <ProductList /> or <ProductItem />.
+    This should be used to display information about each individual item
+    Create and use a new interface for the props of <ProductItem />:
+    interface ProductItemProps {
+        product: Product;
+    }
+    Some of the products are free others are new. Be sure to show this information in <ProductList /> or <ProductItem />.
 
-Add some styles to your app, add your css classes to App.css and Products.css
+    Add some styles to your app, add your css classes to App.css and Products.css
