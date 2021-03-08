@@ -1,8 +1,10 @@
 # React-Kata-Challange
 React App Kata 1 Typescript
+-
 Code for Kata 1 Typescript is available in the app-ts-1 folder.
 
 Learning aims
+-
 The idea here is to get an introduction Typescript in the context of React.
 
 Learn basics of Typescript
@@ -13,6 +15,7 @@ Typescript introduces static typing to Javascript, similar to that of C#. The co
 Here are the important changes Typescript introduces to the code for the Kata.
 
 Static typing
+-
 Variables in Typescript must be given a type. E.g.
 
 let age: Number = 25;
@@ -26,6 +29,7 @@ function logAge(): void {
    console.log(_age);
 }
 Interfaces
+-
 You can define interfaces for classes in Typescript. They work similarly to C#;
 
 interface Person {
@@ -43,6 +47,7 @@ Upon running yarn start, linting errors will cause the build to fail.
 Note: You can run yarn lint as you develop to see all linting errors as you work
 
 Task
+-
 Navigate to app-ts-1
 
 Run yarn, then yarn start to see the webpage in the browser
